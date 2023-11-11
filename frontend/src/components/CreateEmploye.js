@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Box, Button, TextField } from '@mui/material';
+import { Box, Button, TextField, Typography } from '@mui/material';
 import Employeeservice from '../serivce/Employeeservice';
 import { useNavigate } from 'react-router-dom';
 const CreateEmploye = ()=>{
@@ -27,7 +27,9 @@ const CreateEmploye = ()=>{
     return (
       <Box
         sx={{
-          margin: '10%',
+          marginTop: '5%',
+          marginRight: '5%',
+          marginLeft: '5%',
           backgroundColor: 'white',
           padding: '2rem',
           border: '5px solid #ccc',
@@ -37,9 +39,9 @@ const CreateEmploye = ()=>{
           alignItems: 'center',
         }}
       >
-        <h1>Create Employee</h1>
+        <Typography  variant="h4" style={{marginBottom:'2%', fontWeight:'bold'}}>Add New Employee</Typography>
         <form style={{ width: '100%' }}>
-          <div style={{ marginBottom: '1rem', marginLeft:'20%' }}>
+          <div style={{ marginBottom: '1%', marginLeft:'20%' }}>
             <TextField
               onChange={(e)=>setemail(e.target.value)}
               sx={{width:'80%'}}
@@ -67,7 +69,7 @@ const CreateEmploye = ()=>{
             />
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-            <Button onClick={submit} variant="contained" color="primary" sx={{ width: '15%' }}>
+            <Button onClick={submit} variant="contained" sx={{ width: '15%', color:'white', backgroundColor:'#ff6600', ':hover':{backgroundColor:'#ff6600'}}}>
               Save
             </Button>
             <Button
@@ -88,6 +90,5 @@ const CreateEmploye = ()=>{
       </Box>
     );
   }
-
 
 export default CreateEmploye;

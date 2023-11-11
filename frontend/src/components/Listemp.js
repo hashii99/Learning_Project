@@ -59,12 +59,12 @@ const Listemp = () => {
 
   return (
     <div style={{ margin: '2%' }}>
-      <div style={{ marginLeft: '40%', marginTop: '5%' }}>
+      <div style={{ marginLeft: '40%', marginTop: '2%' }}>
         <Typography sx={{ fontSize: '44px', color: 'black' }}>List Of Employee</Typography>
       </div>
 
       <TableContainer>
-        <Button onClick={addEmployee} sx={{ backgroundColor: 'blue', color: 'black', width: '10%', marginLeft: '5%', ':hover': { backgroundColor: 'blue' } }}>Add Employee</Button>
+        <Button onClick={addEmployee} sx={{ backgroundColor: '#ff6600', color: 'white', width: '10%', marginLeft: '5%', ':hover': { backgroundColor: '#ff6600' } }}>Add Employee</Button>
         <Table sx={{ width: '90%', marginTop: '1%', marginLeft: '5%', marginRight: '5%', marginBottom: '5%' }} aria-label="customized table">
           <TableHead>
             <TableRow>

@@ -8,9 +8,8 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import pic from '../assets/pic.jfif'
+import pic from '../assets/management.jpg'
 import SearchIcon from '@mui/icons-material/Search';
-
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -57,7 +56,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor: '#ff9966'}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -67,13 +66,20 @@ export default function SearchAppBar() {
             sx={{ mr: 2 }}
           >
             <Stack direction="row" spacing={2}>
-      <Avatar alt="Remy Sharp" src={pic} /></Stack>
+              <Avatar alt="Remy Sharp" src={pic} /></Stack>
           </IconButton>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' },color:'black',fontSize:'24px',fontWeight:'500' }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'block' },
+             
+              fontSize: '24px',
+              fontWeight: '500',
+              color: 'white'
+            }}
           >
             Employee Management System
           </Typography>
